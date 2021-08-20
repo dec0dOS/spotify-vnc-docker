@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - Dockerfile
+      - entrypoint.sh
       - .github/workflows/build_and_push.yml
     tags:
       - "*"
