@@ -1,0 +1,18 @@
+version: "3.3"
+
+services:
+  docker-spotify-vnc:
+    image: docker-spotify-vnc
+    container_name: docker-spotify-vnc
+    build:
+      context: .
+    ports:
+      - 5900:5900
+    volumes:
+      - type: bind
+        source: .config
+        target: /home/docker/.config/spotify
+    #   - type: bind
+    #     source: /tmp/snapfifo
+    #     target: /tmp/snapfifo
+    restart: unless-stopped
