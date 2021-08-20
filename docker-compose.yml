@@ -1,9 +1,9 @@
 version: "3.3"
 
 services:
-  docker-spotify-vnc:
-    image: docker-spotify-vnc
-    container_name: docker-spotify-vnc
+  spotify-vnc:
+    image: dec0dos/spotify-vnc
+    container_name: spotify-vnc
     build:
       context: .
     ports:
