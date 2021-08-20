@@ -17,5 +17,5 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD }}
-          repository: ${{ secrets.DOCKERHUB_USERNAME }}/asterisk-rpi
+          repository: ${{ secrets.DOCKERHUB_USERNAME }}/spotify-vnc
           short-description: ${{ github.event.repository.description }}
